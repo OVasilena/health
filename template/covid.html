@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./../assets/styles/main.css">
+    <script type="text/javascript" src="./../assets/js/index.js"></script>
+    <title>7 Tage Inzidenz</title>
+</head>
+<body>
+<div class="container">
+    <div>
+        <div class="content-header">
+            <h2>Inzidenzfälle in Deutschland</h2>
+            <span id="covid-time"></span>
+        </div>
+
+        <div class="content">
+            <label for="covid-city"></label>
+            <select id="covid-city" name="covidCity" onchange="getCity()">
+                <option value="11" selected>Berlin</option>
+                <option value="2">Hamburg</option>
+                <option value="4">Bremen</option>
+            </select>
+        </div>
+    </div>
+    <div class="covid">
+        <section class="woche covid_item">
+            <h3 class="covid_item-title">7-Tage-Inzidenz</h3>
+            <div class="covid_item-value" id="inz7t"></div>
+            <h5 class="covid_item-subtitle">7-Tage Fallzahl</h5>
+            <div class="covid_item-subvalue" id="anzfall7t"></div>
+        </section>
+
+        <section class="covid_item">
+            <h3 class="covid_item-title">COVID-19-Fälle</h3>
+            <div class="covid_item-value" id="anzfallneu"></div>
+            <h5 class="covid_item-subtitle">Gesamt</h5>
+            <div class="covid_item-subvalue" id="anzfall"></div>
+        </section>
+
+        <section class="covid_item">
+            <h3 class="covid_item-title">COVID-19 Todesfälle</h3>
+            <div class="covid_item-value" id="anztodesfallneu"></div>
+            <h5 class="covid_item-subtitle">Gesamt</h5>
+            <div class="covid_item-subvalue" id="anztodesfall"></div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
